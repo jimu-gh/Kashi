@@ -9,7 +9,7 @@
 Kashi is a custom preset for [BetterTouchTool](https://folivora.ai/) that displays the current song's lyrics on the Macbook Pro's Touch Bar. Works with [Spotify](https://www.spotify.com/us/download/other/) and [iTunes](https://www.apple.com/itunes/download/).
 
 Kashi has three main functions:
-- It gets local system data about the current song playing via Applescript.
+- It gets local system data about the current song playing via AppleScript.
 - It queries the [Genius API](https://docs.genius.com/) and validates for the most accurate search hit.
 - It scrapes lyrics from the raw HTML, formats, and outputs them onto the Touch Bar.
 

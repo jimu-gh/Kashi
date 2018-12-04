@@ -3,10 +3,14 @@ from bs4 import BeautifulSoup
 from io import open
 
 def main():
-    code,output,err = getPlayerInfo()                                   # Get player state via AppleScript
-    player_data = output.split(', ')                                    # Parse data by comma
-    player_type = player_data[0]                                        # Player state
-    player_data = normalizeCommas(player_type, player_data)             # Recombine artist or title split in parse step due to commas
+    # Get player state via AppleScript
+    code,output,err = getPlayerInfo()
+    # Parse data by comma
+    player_data = output.split(', ')
+    # Player state
+    player_type = player_data[0]
+    # Recombine artist or title split in parse step due to commas
+    player_data = normalizeCommas(player_type, player_data)
     player_artist = player_data[1].lower()                              # Player artist post-normalization
     player_song = player_data[2].lower()                                # Player song post-normalization
     player_position = int(float(player_data[3]))                        # Position in song
@@ -26,11 +30,13 @@ def main():
         accesstoken = 'PQoWxI5pVo20hSd4OI1Y3kaV1qqZfqnmZACjvXGSJeRv6-gOCaKrVWRUpzKJTor-'
         headers = {'Authorization': 'Bearer ' + accesstoken, 'User-Agent': 'SongTouch', 'Accept': 'application/json', 'Host':'api.genius.com'}
         searchdata = {'q': player_artist + ' ' + player_song}
-        searchresponse = requests.get('https://api.genius.com/search', params = searchdata, headers = headers).json()   #Access Genius API
+        # Access Genius API
+        searchresponse = requests.get('https://api.genius.com/search', params = searchdata, headers = headers).json()
         hits = searchresponse['response']['hits']
         # print("\nHits:", hits)
         hitcount = 0
-        if len(hits) > 0:                                               # Get info from top search hit that contains player artist
+        if len(hits) > 0:
+            # Get info from top search hit that contains player artist
             while hitcount < len(hits) - 1 and not any([x in hits[hitcount]['result']['primary_artist']['name'].lower() for x in player_artist_array]):
                 hitcount += 1                                           # Go to next hit
             genius_artist = hits[hitcount]['result']['primary_artist']['name'].lower()
@@ -38,10 +44,13 @@ def main():
             genius_url = hits[hitcount]['result']['url']
             # print('\nGenius Artist: ' + genius_artist + '\nGenius Song: ' + genius_song + '\nGenius URL: ' + genius_url + '\n')
             if any([y in genius_artist for y in player_artist_array]):
-                lyrics = parseAndFormat(genius_url)                     # Parse Genius HTML with BeautifulSoup and format lyrics
-                print(lyrics)                                           # Print to touch bar
+                # Parse Genius HTML with BeautifulSoup and format lyrics
+                lyrics = parseAndFormat(genius_url)
+                # Print to touch bar
+                print(lyrics)
             else:
-                printWisdom(player_song)                                # Print music quote if lyrics not found
+                # Print music quote if lyrics not found
+                printWisdom(player_song)
         else:
             printWisdom(player_song)
         return
@@ -88,10 +97,26 @@ def parseAndFormat(url):
     return lyricstext
 
 def printWisdom(player_song):
-    wisdom = ['\"Music expresses that which cannot be said and on which it is impossible to be silent.\" - Victor Hugo ','\"If music be the food of love, play on.\" - William Shakespeare ','\"Music is the movement of sound to reach the soul for the education of its virtue.\" - Plato ','\"Where words fail, music speaks.\" - Hans Christian Anderson ','\"One good thing about music, when it hits you, you feel no pain.\" - Bob Marley ','\"Words make you think a thought. Music makes you feel a feeling. A song makes you feel a thought.\" - E. Y. Harburg ','\"I haven\'t understood a bar of music in my life, but I have felt it.\" - Igor Stravinsky ','\"And those who were seen dancing were thought to be insane by those who could not hear the music.\" - Nietzsche ','\"Without music to decorate it, time is just a bunch of boring production deadlines or dates by which bills must be paid.\" - Frank Zappa ','\"Music doesn\'t lie. If there is something to be changed in this world, then it can only happen through music.\" - Jimi Hendrix ','\"There is geometry in the humming of the strings, there is music in the spacing of the spheres.\" - Pythagoras ','\"You are the music while the music lasts.\" - T. S. Eliot ','\"After silence, that which comes nearest to expressing the inexpressible is music.\" - Aldous Huxley ']
-    songhash = hashlib.sha224(player_song.encode('utf-8')).hexdigest()  # Hash songname for quote constant when script refires
-    songhash_int = int(songhash, base = 16)                             # Convert to int
-    print(wisdom[(songhash_int % (len(wisdom) + 1)) - 1])               # Modulus operator reduces hash to an int within array length
+    wisdom = [
+    '\"Music expresses that which cannot be said and on which it is impossible to be silent.\" - Victor Hugo ',
+    '\"If music be the food of love, play on.\" - William Shakespeare ',
+    '\"Music is the movement of sound to reach the soul for the education of its virtue.\" - Plato ',
+    '\"Where words fail, music speaks.\" - Hans Christian Anderson ',
+    '\"One good thing about music, when it hits you, you feel no pain.\" - Bob Marley ',
+    '\"Words make you think a thought. Music makes you feel a feeling. A song makes you feel a thought.\" - E. Y. Harburg ',
+    '\"I haven\'t understood a bar of music in my life, but I have felt it.\" - Igor Stravinsky ',
+    '\"And those who were seen dancing were thought to be insane by those who could not hear the music.\" - Nietzsche ',
+    '\"Without music to decorate it, time is just a bunch of boring production deadlines or dates by which bills must be paid.\" - Frank Zappa ',
+    '\"Music doesn\'t lie. If there is something to be changed in this world, then it can only happen through music.\" - Jimi Hendrix ',
+    '\"There is geometry in the humming of the strings, there is music in the spacing of the spheres.\" - Pythagoras ',
+    '\"You are the music while the music lasts.\" - T. S. Eliot ',
+    '\"After silence, that which comes nearest to expressing the inexpressible is music.\" - Aldous Huxley '
+    ]
+    # Hash songname for constant quote when script refires
+    songhash = hashlib.sha224(player_song.encode('utf-8')).hexdigest()
+    songhash_int = int(songhash, base = 16)
+    # Reduce hash to within array length
+    print(wisdom[(songhash_int % (len(wisdom) + 1)) - 1])
 
 if __name__ == '__main__':
     main()
