@@ -37,3 +37,6 @@ Enjoy never forgetting the lyrics again!
 - Scrolling lyrics (in progress)
 - Browser support: Youtube, Soundcloud, etc.
 - Support for non-English languages.
+
+## Contact
+[LI](https://www.linkedin.com/in/hojim)
