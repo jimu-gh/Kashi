@@ -1,6 +1,7 @@
 
 <h1 align="center">Kashi</h1>
 <p align="center">
+
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 ![love](http://forthebadge.com/images/badges/built-with-love.svg)
 </p>
