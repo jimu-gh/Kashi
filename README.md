@@ -1,6 +1,7 @@
 
-<h1 align="center">Kashi</h1>
+<h1 align="center">Kashi<br>
 <h3 align="center">Display current song lyrics on the Touch Bar</h3>
+</h1>
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 ![love](http://forthebadge.com/images/badges/built-with-love.svg)
