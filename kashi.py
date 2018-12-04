@@ -7,32 +7,32 @@ def main():
     code,output,err = getPlayerInfo()
     # Parse data by comma
     player_data = output.split(', ')
-    # Player state
+    # print(player_data)
     player_type = player_data[0]
     # Recombine artist or title split in parse step due to commas
     player_data = normalizeCommas(player_type, player_data)
-    player_artist = player_data[1].lower()                              # Player artist post-normalization
-    player_song = player_data[2].lower()                                # Player song post-normalization
-    player_position = int(float(player_data[3]))                        # Position in song
-    player_state = player_data[4].lower()                               # Playing or paused
-    if '&' in player_artist:                                            # Check for multiple artists
-        player_artist_1 = re.sub(r' \&.*$', '', player_artist)          # Primary player artist
-        player_artist_2 = re.sub(r'^.*\& ', '', player_artist)          # Secondary player artist
+    player_artist = player_data[1].lower()          # Player artist post-normalization
+    player_song = player_data[2].lower()            # Player song post-normalization
+    player_position = int(float(player_data[3]))    # Position in song
+    player_state = player_data[4].lower()           # Playing or paused?
+    if '&' in player_artist:                        # Check for multiple artists
+        player_artist_1 = re.sub(r' \&.*$', '', player_artist)
+        player_artist_2 = re.sub(r'^.*\& ', '', player_artist)
     else:
         player_artist_1 = 'n/a'
         player_artist_2 = 'n/a'
     player_artist_array = [player_artist, player_artist_1, player_artist_2]
-    player_song = cleanSong(player_song)                                # Cleanse title text
+    # Remove extra information from title
+    player_song = cleanSong(player_song)
     # print('\nPlayer Full Artist: ' + player_artist + '\nPlayer Artist 1: ' + player_artist_1 + '\nPlayer Artist 2: ' + player_artist_2 + '\nPlayer Song: ' + player_song)
     if player_state != 'playing':
         return
     else:
-        accesstoken = 'PQoWxI5pVo20hSd4OI1Y3kaV1qqZfqnmZACjvXGSJeRv6-gOCaKrVWRUpzKJTor-'
-        headers = {'Authorization': 'Bearer ' + accesstoken, 'User-Agent': 'SongTouch', 'Accept': 'application/json', 'Host':'api.genius.com'}
-        searchdata = {'q': player_artist + ' ' + player_song}
         # Access Genius API
-        searchresponse = requests.get('https://api.genius.com/search', params = searchdata, headers = headers).json()
-        hits = searchresponse['response']['hits']
+        accesstoken = 'PQoWxI5pVo20hSd4OI1Y3kaV1qqZfqnmZACjvXGSJeRv6-gOCaKrVWRUpzKJTor-'
+        headers = {'Authorization': 'Bearer ' + accesstoken, 'User-Agent': 'Kashi', 'Accept': 'application/json', 'Host':'api.genius.com'}
+        params = {'q': player_artist + ' ' + player_song}
+        hits = requests.get('https://api.genius.com/search', params = params, headers = headers).json()['response']['hits']
         # print("\nHits:", hits)
         hitcount = 0
         if len(hits) > 0:
@@ -71,19 +71,19 @@ def getPlayerInfo():
     end run
     ''', background = False)
 
-def normalizeCommas(player_type, player_data):                          # Each player has a pattern of comma use
+def normalizeCommas(player_type, player_data):
     while len(player_data) > 5:
-        if player_type == 'iTunes':                                     # iTunes pattern: Combine artists split by comma
+        if player_type == 'iTunes':                 # iTunes: Combine artists split by comma
             player_data[1] = player_data[1] + ', ' + player_data[2]
             player_data.pop(2)
-        else:                                                           # Spotify pattern: Combine songs split by comma
+        else:                                       # Spotify: Combine songs split by comma
             player_data[2] = player_data[2] + ', ' + player_data[3]
             player_data.pop(3)
     return player_data
 
 def cleanSong(songtitle):
-    songtitle = re.sub(r' -.*$', '', songtitle)                         # Remove everything after dash
-    songtitle = re.sub(r' \(.*\)', '', songtitle)                       # Remove parenthetical
+    songtitle = re.sub(r' -.*$', '', songtitle)     # Remove everything after dash
+    songtitle = re.sub(r' \(.*\)', '', songtitle)   # Remove parenthetical
     return songtitle
 
 def parseAndFormat(url):
