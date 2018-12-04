@@ -39,4 +39,4 @@ Enjoy never forgetting the lyrics again!
 - Support for non-English languages.
 
 ## Contact
-[LI](https://www.linkedin.com/in/hojim)
+[LinkedIn](https://www.linkedin.com/in/hojim)
