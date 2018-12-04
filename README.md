@@ -11,7 +11,7 @@ Kashi is a custom preset for [BetterTouchTool](https://folivora.ai/) that displa
 Kashi has three main functions:
 - It gets local system data about the current song playing via Applescript.
 - It queries [Genius API](https://docs.genius.com/) and validates for the most accurate search hit.
-- It scrapes the raw HTML, formats and outputs the lyrics onto the Touch Bar.
+- It scrapes lyrics from the raw HTML, formats, and outputs them onto the Touch Bar.
 
 ## Installation
 
@@ -32,5 +32,6 @@ Kashi requires the following:
 As Gordon Ramsay would say, **DONE**. You should see Kashi appear as a new widget.
 
 ## Planned Features
+- Scrolling lyrics (In progress)
 - Browser/web-player support: Youtube, Soundcloud, etc.
 - Support for non-English languages.
