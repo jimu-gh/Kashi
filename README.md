@@ -1,7 +1,7 @@
 
 <h1 align="center">KASHI · 歌詞 · かし</h1>
 
-![[forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
+![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 ![love](http://forthebadge.com/images/badges/built-with-love.svg)
 
 ![build](https://img.shields.io/badge/build-passing-brightgreen.svg?style=for-the-badge)  ![license](https://img.shields.io/badge/license-GPLv3-blue.svg?style=for-the-badge) ![license](https://img.shields.io/badge/PRs-welcome-yellow.svg?style=for-the-badge)
