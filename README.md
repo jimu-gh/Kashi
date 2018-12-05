@@ -1,10 +1,10 @@
 
 <h1 align="center">KASHI · 歌詞 · かし</h1>
 
-[![python](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 ![love](http://forthebadge.com/images/badges/built-with-love.svg)
 
-![build](https://img.shields.io/badge/build-passing-brightgreen.svg?style=for-the-badge)  ![license](https://img.shields.io/badge/license-GPLv3-blue.svg?style=for-the-badge) ![pr](https://img.shields.io/badge/PRs-welcome-yellow.svg?style=for-the-badge)
+![build](https://img.shields.io/badge/build-passing-brightgreen.svg?style=for-the-badge)  ![license](https://img.shields.io/badge/license-GPLv3-blue.svg?style=for-the-badge) ![license](https://img.shields.io/badge/PRs-welcome-yellow.svg?style=for-the-badge)
 
 Kashi is a custom preset for [BetterTouchTool](https://folivora.ai/) that displays the current song's lyrics on the Macbook Pro's Touch Bar. Works with [Spotify](https://www.spotify.com/us/download/other/) and [iTunes](https://www.apple.com/itunes/download/).
 
@@ -18,17 +18,9 @@ Kashi has three main functions:
 ### Step 1: Install Dependencies
 1. Download and install [BetterTouchTool](https://folivora.ai/).
 2. Install [Python 3](https://www.python.org/downloads/release/python-371/) and the modules below
-  * [OSAscript](https://github.com/looking-for-a-job/osascript.py)
-   `pip3 install osascript`
-  * [Requests](http://docs.python-requests.org/en/master/)
-   `pip3 install requests`
-  * [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/)
-   `pip3 install bs4`
-
-Kashi requires the following:
--
--
-- An internet connection
+  - [OSAscript](https://github.com/looking-for-a-job/osascript.py) - `pip3 install osascript`
+  - [Requests](http://docs.python-requests.org/en/master/) - `pip3 install requests`
+  - [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) - `pip3 install bs4`
 
 ### Step 2: Import Kashi Into BetterTouchTool
  1. Copy the entire contents of `kashi.json` onto your clipboard
