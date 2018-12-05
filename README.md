@@ -1,7 +1,7 @@
 
 <h1 align="center">KASHI · 歌詞 · かし</h1>
 
-[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
+![[forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 ![love](http://forthebadge.com/images/badges/built-with-love.svg)
 
 ![build](https://img.shields.io/badge/build-passing-brightgreen.svg?style=for-the-badge)  ![license](https://img.shields.io/badge/license-GPLv3-blue.svg?style=for-the-badge) ![license](https://img.shields.io/badge/PRs-welcome-yellow.svg?style=for-the-badge)
@@ -23,19 +23,19 @@ Kashi has three main functions:
   - [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) - `pip3 install bs4`
 
 ### Step 2: Import Kashi Into BetterTouchTool
- 1. Open BetterTouch Tool preferences.
+1. Open BetterTouch Tool preferences.
  
- [pref](/screens/pref.png)
+![pref](/screens/pref.png)
  
- 2. Click "Manage Presets", then "Import".
+2. Click "Manage Presets", then "Import".
  
- [import](/screens/import.png)
+![import](/screens/import.png)
  
- 3. Import `kashi,json`.
+3. Import `kashi,json`.
  
- As Gordon Ramsay would say, **DONE**. You should see Kashi appear as a new widget.
- 
- [kashi](/screens/kashi.png)
+As Gordon Ramsay would say, **DONE**. You should see Kashi appear as a new widget.
+
+![kashi](/screens/kashi.png)
 
 Enjoy never forgetting the lyrics again!
 
