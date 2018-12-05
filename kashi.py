@@ -5,17 +5,17 @@ from io import open
 def main():
     # Get player state via AppleScript
     code,output,err = getPlayerInfo()
-    # Parse data by comma
+    # Parse
     player_data = output.split(', ')
     # print(player_data)
     player_type = player_data[0]
-    # Recombine artist or title split in parse step due to commas
+    # Recombine artist or title that may have been split up if commas in title
     player_data = normalizeCommas(player_type, player_data)
-    player_artist = player_data[1].lower()          # Player artist post-normalization
-    player_song = player_data[2].lower()            # Player song post-normalization
-    player_position = int(float(player_data[3]))    # Position in song
-    player_state = player_data[4].lower()           # Playing or paused?
-    if '&' in player_artist:                        # Check for multiple artists
+    player_artist = player_data[1].lower()      # Player artist post-normalization
+    player_song = player_data[2].lower()        # Player song post-normalization
+    player_position = int(float(player_data[3]))# Song Position
+    player_state = player_data[4].lower()       # Playing or paused?
+    if '&' in player_artist:                    # Check for multiple artists
         player_artist_1 = re.sub(r' \&.*$', '', player_artist)
         player_artist_2 = re.sub(r'^.*\& ', '', player_artist)
     else:
@@ -25,7 +25,7 @@ def main():
     # Remove extra information from title
     player_song = cleanSong(player_song)
     # print('\nPlayer Full Artist: ' + player_artist + '\nPlayer Artist 1: ' + player_artist_1 + '\nPlayer Artist 2: ' + player_artist_2 + '\nPlayer Song: ' + player_song)
-    if player_state != 'playing':
+    if player_state != 'playing':   # Return nothing if player is paused
         return
     else:
         # Access Genius API
@@ -89,7 +89,7 @@ def cleanSong(songtitle):
 def parseAndFormat(url):
     source_soup = BeautifulSoup(requests.get(url).text, 'html.parser')  # Parse HTML
     lyricstext = source_soup.find('div', class_ = 'lyrics').get_text()  # Get text from the Lyrics <div>
-    lyricstext = re.sub(r'\[.*\]', '', lyricstext).strip()              # Remove song sections in brackets
+    lyricstext = re.sub(r'\[.*\n*.*\]', '', lyricstext).strip()         # Remove song sections in brackets
     lyricstext = re.sub(r'\(.*\n*.*\)', '', lyricstext).strip()         # Remove parentheticals from lyrics
     while '\n\n' in lyricstext:                                         # Remove double line breaks, then flatten and replace
         lyricstext = lyricstext.replace('\n\n', '\n')

@@ -16,12 +16,18 @@ Kashi has three main functions:
 ## Installation
 
 ### Step 1: Install Dependencies
+1. Download and install [BetterTouchTool](https://folivora.ai/).
+2. Install [Python 3](https://www.python.org/downloads/release/python-371/) and the modules below
+  * [OSAscript](https://github.com/looking-for-a-job/osascript.py)
+   `pip3 install osascript`
+  * [Requests](http://docs.python-requests.org/en/master/)
+   `pip3 install requests`
+  * [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/)
+   `pip3 install bs4`
+
 Kashi requires the following:
-- [BetterTouchTool](https://folivora.ai/)
-- [Python 3](https://www.python.org/downloads/release/python-371/)
-  - [OSAscript](https://github.com/looking-for-a-job/osascript.py) - `pip3 install osascript`
-  - [Requests](http://docs.python-requests.org/en/master/) - `pip3 install requests`
-  - [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) - `pip3 install bs4`
+-
+-
 - An internet connection
 
 ### Step 2: Import Kashi Into BetterTouchTool
@@ -32,6 +38,9 @@ Kashi requires the following:
 As Gordon Ramsay would say, **DONE**. You should see Kashi appear as a new widget.
 
 Enjoy never forgetting the lyrics again!
+
+## Contributing
+
 
 ## Planned Features
 - Scrolling lyrics (in progress)
