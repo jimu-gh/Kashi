@@ -16,8 +16,8 @@ Kashi has three main functions:
 ## Installation
 
 ### Step 1: Install Dependencies
-1. Download and install [BetterTouchTool](https://folivora.ai/).
-2. Install [Python 3](https://www.python.org/downloads/release/python-371/) and the modules below
+- Download and install [BetterTouchTool](https://folivora.ai/).
+- Install [Python 3](https://www.python.org/downloads/release/python-371/) and the modules below
   - [OSAscript](https://github.com/looking-for-a-job/osascript.py) - `pip3 install osascript`
   - [Requests](http://docs.python-requests.org/en/master/) - `pip3 install requests`
   - [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) - `pip3 install bs4`
@@ -31,7 +31,7 @@ Kashi has three main functions:
  
 ![import](/screens/import.png)
  
-3. Import `kashi,json`.
+3. Import [`kashi.json`](/kashi.json).
  
 As Gordon Ramsay would say, **DONE**. You should see Kashi appear as a new widget.
 
@@ -39,13 +39,11 @@ As Gordon Ramsay would say, **DONE**. You should see Kashi appear as a new widge
 
 Enjoy never forgetting the lyrics again!
 
-## Contributing
-
-
 ## Planned Features
-- Scrolling lyrics (in progress)
-- Browser support: Youtube, Soundcloud, etc.
-- Support for non-English languages.
+  - Scrolling lyrics (in progress)
+  - Browser support: Youtube, Soundcloud, etc.
+  - Support for non-English languages.
 
 ## Contact
 [LinkedIn](https://www.linkedin.com/in/hojim)
+[Medium](https://www.medium.com/_jim)
