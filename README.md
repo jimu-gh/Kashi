@@ -29,7 +29,7 @@ Kashi has three main functions:
  
 2. Click "Manage Presets", then "Import".
  
-![import](/screens/import 50p.png)
+![import](/screens/import%2050p.png)
  
 3. Import [`kashi.json`](/kashi.json).
  
