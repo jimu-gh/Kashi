@@ -23,15 +23,15 @@ Kashi has three main functions:
   - [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) - `pip3 install bs4`
 
 ### Step 2: Import Kashi Into BetterTouchTool
-1. Open BetterTouch Tool preferences.
+- Open BetterTouch Tool preferences.
  
 ![pref](/screens/pref.png)
  
-2. Click "Manage Presets", then "Import".
+- Click "Manage Presets", then "Import".
  
 ![import](/screens/import_50p.png)
  
-3. Import [`kashi.json`](/kashi.json).
+- Import [`kashi.json`](/kashi.json).
  
 As Gordon Ramsay would say, **DONE**. You should see Kashi appear as a new widget.
 
