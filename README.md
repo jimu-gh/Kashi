@@ -36,7 +36,9 @@ To learn how to install a file from PyPI, visit the [installation tutorial](http
 Open BetterTouch Tool preferences.
 ![pref](/screens/1.png)
 Click "Manage Presets", then "Import".
+
 ![import](/screens/2.png)
+
 Import [`kashi.json`](/kashi.json).
 ![json](/screens/3.png)
 You should see Kashi appear as a new widget.
