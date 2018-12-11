@@ -6,7 +6,7 @@
 
 ![build](https://img.shields.io/badge/build-passing-brightgreen.svg?style=for-the-badge)  ![license](https://img.shields.io/badge/license-GPLv3-blue.svg?style=for-the-badge) ![license](https://img.shields.io/badge/PRs-welcome-yellow.svg?style=for-the-badge)
 
-Kashi is a custom preset for [BetterTouchTool](https://folivora.ai/) that displays the current song's lyrics on the Macbook Pro's Touch Bar. Works with [Spotify](https://www.spotify.com/us/download/other/) and [iTunes](https://www.apple.com/itunes/download/).
+Kashi is a custom preset for [BetterTouchTool](https://folivora.ai/) that displays the current song's lyrics on the Macbook Pro's Touch Bar. It works with [Spotify](https://www.spotify.com/us/download/other/) and [iTunes](https://www.apple.com/itunes/download/).
 
 Kashi has three main functions:
 1. It gets the current song playing via AppleScript.
@@ -23,9 +23,9 @@ Kashi is a plugin for BTT, so first you will need to download and install [Bette
 
 Install [Python 3](https://www.python.org/downloads/release/python-371/) and the modules below
 
-  - [OSAscript](https://github.com/looking-for-a-job/osascript.py) - `pip3 install osascript`
-  - [Requests](http://docs.python-requests.org/en/master/) - `pip3 install requests`
-  - [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) - `pip3 install bs4`
+  - [OSAscript](https://pypi.org/project/osascript/) - `pip3 install osascript`
+  - [Requests](https://pypi.org/project/requests/) - `pip3 install requests`
+  - [BeautifulSoup](https://pypi.org/project/beautifulsoup4/) - `pip3 install beautifulsoup4`
 
 ### Step 3: Import Kashi Into BetterTouchTool
 
