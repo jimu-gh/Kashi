@@ -33,6 +33,7 @@ Open BetterTouch Tool preferences.
 ![pref](/screens/pref.png)
  
 Click "Manage Presets", then "Import".
+
 ![import](/screens/import_50p.png)
  
 Import [`kashi.json`](/kashi.json). You should see Kashi appear as a new widget.
