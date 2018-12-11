@@ -9,20 +9,26 @@
 Kashi is a custom preset for [BetterTouchTool](https://folivora.ai/) that displays the current song's lyrics on the Macbook Pro's Touch Bar. Works with [Spotify](https://www.spotify.com/us/download/other/) and [iTunes](https://www.apple.com/itunes/download/).
 
 Kashi has three main functions:
-- It gets local system data about the current song playing via AppleScript.
-- It queries the [Genius API](https://docs.genius.com/) and validates for the most accurate search hit.
-- It scrapes lyrics from the raw HTML, formats, and outputs them onto the Touch Bar.
+1. It gets the current song playing via AppleScript.
+2. It searches the [Genius API](https://docs.genius.com/) and looks for the best match within the hits.
+3. It scrapes lyrics from the raw HTML, formats, and outputs them onto the Touch Bar.
 
 ## Installation
 
-### Step 1: Install Dependencies
-- Download and install [BetterTouchTool](https://folivora.ai/).
-- Install [Python 3](https://www.python.org/downloads/release/python-371/) and the modules below
+### Step 1: Install BetterTouchTool
+
+Kashi is a plugin for BTT, so first you will need to download and install [BetterTouchTool](https://folivora.ai/).
+
+### Step 2: Install Python + Modules
+
+Install [Python 3](https://www.python.org/downloads/release/python-371/) and the modules below
+
   - [OSAscript](https://github.com/looking-for-a-job/osascript.py) - `pip3 install osascript`
   - [Requests](http://docs.python-requests.org/en/master/) - `pip3 install requests`
   - [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) - `pip3 install bs4`
 
-### Step 2: Import Kashi Into BetterTouchTool
+### Step 3: Import Kashi Into BetterTouchTool
+
 - Open BetterTouch Tool preferences.
  
 ![pref](/screens/pref.png)
@@ -45,5 +51,6 @@ Enjoy never forgetting the lyrics again!
   - Support for non-English languages.
 
 ## Contact
+
 [LinkedIn](https://www.linkedin.com/in/hojim)
 [Medium](https://www.medium.com/_jim)
