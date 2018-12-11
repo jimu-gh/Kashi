@@ -37,10 +37,9 @@ Click "Manage Presets", then "Import".
 ![import](/screens/import_50p.png)
  
 Import [`kashi.json`](/kashi.json). You should see Kashi appear as a new widget.
-
 ![kashi](/screens/kashi.png)
 
-Enjoy never forgetting the lyrics again!
+Lyrics should now appear on the Touch Bar when a song is playing. Enjoy never forgetting the lyrics again!
 
 ## Planned Features
   - Scrolling lyrics (in progress)
@@ -49,6 +48,8 @@ Enjoy never forgetting the lyrics again!
 
 ## Contact
 
-[LinkedIn](https://www.linkedin.com/in/hojim)
+<a href="https://www.linkedin.com/in/hojim>LinkedIn</a>
+<a href="https://www.medium.com/_jim0>Medium</a>
 
+[LinkedIn](https://www.linkedin.com/in/hojim)
 [Medium](https://www.medium.com/_jim)
