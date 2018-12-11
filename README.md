@@ -29,17 +29,15 @@ Install [Python 3](https://www.python.org/downloads/release/python-371/) and the
 
 ### Step 3: Import Kashi Into BetterTouchTool
 
-- Open BetterTouch Tool preferences.
+Open BetterTouch Tool preferences.
  
 ![pref](/screens/pref.png)
  
-- Click "Manage Presets", then "Import".
+Click "Manage Presets", then "Import".
  
 ![import](/screens/import_50p.png)
  
-- Import [`kashi.json`](/kashi.json).
- 
-As Gordon Ramsay would say, **DONE**. You should see Kashi appear as a new widget.
+Import [`kashi.json`](/kashi.json). You should see Kashi appear as a new widget.
 
 ![kashi](/screens/kashi.png)
 
