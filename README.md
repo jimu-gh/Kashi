@@ -43,7 +43,7 @@ Import [`kashi.json`](/kashi.json).
 ![json](/screens/3.png)
 You should see Kashi appear as a new widget.
 ![kashi](/screens/4.png)
-Lyrics should now appear on the Touch Bar when a song is playing. Enjoy never forgetting the lyrics again! 🎉
+Lyrics for the currently playing song should appear on the Touch Bar. Enjoy never forgetting the lyrics again! 🎉
 
 ## Planned Features
   - Scrolling lyrics (in progress)
