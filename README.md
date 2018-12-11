@@ -19,7 +19,7 @@ Kashi has three main functions:
 
 Kashi is a plugin for BTT, so first you will need to download and install [BetterTouchTool](https://folivora.ai/).
 
-### Step 2: Install Python + Modules
+### Step 2: Install Python & Necessary Modules
 
 Install [Python 3](https://www.python.org/downloads/release/python-371/) and the [PyPI](https://pypi.org/) modules below.<br>
 To learn how to install a file from PyPI, visit the [installation tutorial](https://packaging.python.org/tutorials/installing-packages/#installing-from-pypi) on the Python Packaging User Guide.
