@@ -34,13 +34,17 @@ To learn how to install a file from PyPI, visit the [installation tutorial](http
 ### Step 3: Import Kashi Into BetterTouchTool
 
 Open BetterTouch Tool preferences.
-![pref](/screens/pref.png)
+![pref](/screens/1.png)
 Click "Manage Presets", then "Import".
 
-![import](/screens/import.png)
+![import](/screens/2.png)
+
+Import [`kashi.json`](/kashi.json).
+
+![json](/screens/3.png)
  
-Import [`kashi.json`](/kashi.json). You should see Kashi appear as a new widget.
-![kashi](/screens/kashi.png)
+You should see Kashi appear as a new widget.
+![kashi](/screens/4.png)
 Lyrics should now appear on the Touch Bar when a song is playing. Enjoy never forgetting the lyrics again! 🎉
 
 ## Planned Features
