@@ -53,4 +53,5 @@ Enjoy never forgetting the lyrics again!
 ## Contact
 
 [LinkedIn](https://www.linkedin.com/in/hojim)
+
 [Medium](https://www.medium.com/_jim)
