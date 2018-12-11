@@ -21,7 +21,8 @@ Kashi is a plugin for BTT, so first you will need to download and install [Bette
 
 ### Step 2: Install Python + Modules
 
-Install [Python 3](https://www.python.org/downloads/release/python-371/) and the modules below
+Install [Python 3](https://www.python.org/downloads/release/python-371/) and the [PyPI](https://pypi.org/) modules below.
+To learn how to install a file from PyPI, visit the [installation tutorial](https://packaging.python.org/tutorials/installing-packages/#installing-from-pypi) on the Python Packaging User Guide.
 
   - [OSAscript](https://pypi.org/project/osascript/) - `pip3 install osascript`
   - [Requests](https://pypi.org/project/requests/) - `pip3 install requests`
@@ -37,7 +38,7 @@ Click "Manage Presets", then "Import".
  
 Import [`kashi.json`](/kashi.json). You should see Kashi appear as a new widget.
 ![kashi](/screens/kashi.png)
-Lyrics should now appear on the Touch Bar when a song is playing. Enjoy never forgetting the lyrics again!
+Lyrics should now appear on the Touch Bar when a song is playing. Enjoy never forgetting the lyrics again! 🎉
 
 ## Planned Features
   - Scrolling lyrics (in progress)
@@ -47,4 +48,5 @@ Lyrics should now appear on the Touch Bar when a song is playing. Enjoy never fo
 ## Contact
 
 [LinkedIn](https://www.linkedin.com/in/hojim)
+
 [Medium](https://www.medium.com/_jim)
