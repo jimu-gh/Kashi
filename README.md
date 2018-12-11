@@ -21,13 +21,16 @@ Kashi is a plugin for BTT, so first you will need to download and install [Bette
 
 ### Step 2: Install Python + Modules
 
-Install [Python 3](https://www.python.org/downloads/release/python-371/) and the [PyPI](https://pypi.org/) modules below.
+Install [Python 3](https://www.python.org/downloads/release/python-371/) and the [PyPI](https://pypi.org/) modules below.<br>
 To learn how to install a file from PyPI, visit the [installation tutorial](https://packaging.python.org/tutorials/installing-packages/#installing-from-pypi) on the Python Packaging User Guide.
 
-  - [OSAscript](https://pypi.org/project/osascript/) - `pip3 install osascript`
-  - [Requests](https://pypi.org/project/requests/) - `pip3 install requests`
-  - [BeautifulSoup](https://pypi.org/project/beautifulsoup4/) - `pip3 install beautifulsoup4`
-
+  - [OSAscript](https://pypi.org/project/osascript/)<br>
+  `pip install osascript` or `pip3 install osascript`
+  - [Requests](https://pypi.org/project/requests/)<br>
+  `pip install requests` or `pip3 install requests`
+  - [BeautifulSoup](https://pypi.org/project/beautifulsoup4/)<br>
+  `pip install beautifulsoup4` or `pip3 install beautifulsoup4`
+  
 ### Step 3: Import Kashi Into BetterTouchTool
 
 Open BetterTouch Tool preferences.
