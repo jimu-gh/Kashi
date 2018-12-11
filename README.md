@@ -30,7 +30,6 @@ Install [Python 3](https://www.python.org/downloads/release/python-371/) and the
 ### Step 3: Import Kashi Into BetterTouchTool
 
 Open BetterTouch Tool preferences.
- 
 ![pref](/screens/pref.png)
  
 Click "Manage Presets", then "Import".
