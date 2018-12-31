@@ -53,5 +53,3 @@ Lyrics for the currently playing song should appear on the Touch Bar. Enjoy! ðŸŽ
 ## Contact
 
 [LinkedIn](https://www.linkedin.com/in/hojim)
-
-[Medium](https://www.medium.com/_jim)
