@@ -100,14 +100,9 @@ def printWisdom(player_song):
     wisdom = [
     '\"Music expresses that which cannot be said and on which it is impossible to be silent.\" - Victor Hugo ',
     '\"If music be the food of love, play on.\" - William Shakespeare ',
-    '\"Music is the movement of sound to reach the soul for the education of its virtue.\" - Plato ',
     '\"Where words fail, music speaks.\" - Hans Christian Anderson ',
     '\"One good thing about music, when it hits you, you feel no pain.\" - Bob Marley ',
-    '\"Words make you think a thought. Music makes you feel a feeling. A song makes you feel a thought.\" - E. Y. Harburg ',
-    '\"I haven\'t understood a bar of music in my life, but I have felt it.\" - Igor Stravinsky ',
     '\"And those who were seen dancing were thought to be insane by those who could not hear the music.\" - Nietzsche ',
-    '\"Without music to decorate it, time is just a bunch of boring production deadlines or dates by which bills must be paid.\" - Frank Zappa ',
-    '\"Music doesn\'t lie. If there is something to be changed in this world, then it can only happen through music.\" - Jimi Hendrix ',
     '\"There is geometry in the humming of the strings, there is music in the spacing of the spheres.\" - Pythagoras ',
     '\"You are the music while the music lasts.\" - T. S. Eliot ',
     '\"After silence, that which comes nearest to expressing the inexpressible is music.\" - Aldous Huxley '
