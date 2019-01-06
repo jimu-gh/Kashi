@@ -29,7 +29,7 @@ def main():
         return
     else:
         # Access Genius API 'https://docs.genius.com'
-        accesstoken = ''    # From 'https://genius.com/api-clients'
+        accesstoken = 'ORYExHGED-rUDNu6wEqCt42NCg9nFuBiCiVKAYkjSrS6aQ1RHdyyjp5gl7GlpXZH'    # From 'https://genius.com/api-clients'
         headers = {'Authorization': 'Bearer ' + accesstoken, 'User-Agent': 'Kashi', 'Accept': 'application/json', 'Host':'api.genius.com'}
         params = {'q': player_artist + ' ' + player_song}
         hits = requests.get('https://api.genius.com/search', params = params, headers = headers).json()['response']['hits']
