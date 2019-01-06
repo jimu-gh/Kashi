@@ -28,8 +28,8 @@ def main():
     if player_state != 'playing':   # Return nothing if player is paused
         return
     else:
-        # Access Genius API
-        accesstoken = 'PQoWxI5pVo20hSd4OI1Y3kaV1qqZfqnmZACjvXGSJeRv6-gOCaKrVWRUpzKJTor-'
+        # Access Genius API 'https://docs.genius.com'
+        accesstoken = ''    # From 'https://genius.com/api-clients'
         headers = {'Authorization': 'Bearer ' + accesstoken, 'User-Agent': 'Kashi', 'Accept': 'application/json', 'Host':'api.genius.com'}
         params = {'q': player_artist + ' ' + player_song}
         hits = requests.get('https://api.genius.com/search', params = params, headers = headers).json()['response']['hits']
