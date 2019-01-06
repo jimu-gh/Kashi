@@ -58,13 +58,13 @@ def main():
 def getPlayerInfo():
     return osascript.run('''
     on run
-        if application "iTunes" is running then
-            tell application "iTunes"
-                set currentInfo to {"iTunes", artist of current track, name of current track, player position, player state}
-            end tell
-        else if application "Spotify" is running then
-        	tell application "Spotify"
+        if application "spotify" is running then
+            tell application "Spotify"
                 set currentInfo to {"Spotify", artist of current track, name of current track, player position, player state}
+            end tell
+        else if application "iTunes" is running then
+        	tell application "iTunes"
+                set currentInfo to {"iTunes", artist of current track, name of current track, player position, player state}
             end tell
         end if
         return currentInfo
@@ -83,15 +83,15 @@ def normalizeCommas(player_type, player_data):
 
 def cleanSong(songtitle):
     songtitle = re.sub(r' -.*$', '', songtitle)     # Remove everything after dash
-    songtitle = re.sub(r' \(.*\)', '', songtitle)   # Remove parenthetical
+    songtitle = re.sub(r' \(.*\)', '', songtitle)   # Remove parentheticals
     return songtitle
 
 def parseAndFormat(url):
     source_soup = BeautifulSoup(requests.get(url).text, 'html.parser')  # Parse HTML
-    lyricstext = source_soup.find('div', class_ = 'lyrics').get_text()  # Get text from the Lyrics <div>
+    lyricstext = source_soup.find('div', class_ = 'lyrics').get_text()  # Get text from the lyrics <div>
     lyricstext = re.sub(r'\[.*\n*.*\]', '', lyricstext).strip()         # Remove song sections in brackets
-    lyricstext = re.sub(r'\(.*\n*.*\)', '', lyricstext).strip()         # Remove parentheticals from lyrics
-    while '\n\n' in lyricstext:                                         # Remove double line breaks, then flatten and replace
+    lyricstext = re.sub(r'\(.*\n*.*\)', '', lyricstext).strip()         # Remove parentheticals
+    while '\n\n' in lyricstext:                                         # Line breaks, flatten, and replace
         lyricstext = lyricstext.replace('\n\n', '\n')
     lyricstext = lyricstext.replace('\n', ', ').replace('?,', '?').replace('!,', '!').replace(' ,', ',').replace(' .', '.').replace('.,', '.').replace(',.', '.').replace('...', '..').replace('...', '..').replace('  ', ' ')
     return lyricstext
