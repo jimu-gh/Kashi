@@ -31,25 +31,21 @@ To learn how to install a file from PyPI, visit the [installation tutorial](http
   - [BeautifulSoup](https://pypi.org/project/beautifulsoup4/)<br>
   `pip install beautifulsoup4` or `pip3 install beautifulsoup4`
   
-### Step 3: Import Kashi Into BetterTouchTool
+### Step 3: Import Kashi.json Into BetterTouchTool
 
-A. Open BetterTouchTool Configuration, accessible via the top menu bar.
-
+Open BetterTouchTool Configuration, accessible via the top menu bar.
 <img src="screens/1.png" alt="Open BTT Configuration" width="425">
 
-B. Confirm that you are in the Touch Bar Settings.
-
+Confirm that you are in the Touch Bar Settings.
 <img src="screens/2.png" alt="Touch Bar Settings" width="400">
 
-C. Open [`kashi.json`](/kashi.json) in a text editor. Select all (⌘A) and copy (⌘C).
-
+Open [`kashi.json`](/kashi.json) in a text editor. Select all (⌘A) and copy (⌘C).
 <img src="screens/3.png" alt="Select / Copy JSON" width="650">
 
-D. Return to the BetterTouchTool Configuration and paste (⌘V). You should see the new widget "Shell Script/Task: Kashi" in your list.
-
+Paste (⌘V) directly into the BetterTouchTool Configuration window. The new widget will appear in your list.
 <img src="screens/4.png" alt="Paste JSON Into BTT Configuration Window" width="650">
 
-That's it! If you followed all the steps above, lyrics for the currently playing song should now appear on the Touch Bar. Enjoy! 🎉
+That's it! Lyrics for the currently playing song should now appear on the Touch Bar. Enjoy! 🎉
 
 For further Touch Bar customization, please visit the official [BetterTouchTool Documentation](https://docs.bettertouchtool.net/docs/402_touch_bar_basics.html)
 
