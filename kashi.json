@@ -29,7 +29,7 @@
       "BTTTouchBarHideWhenPaused": 0,
       "BTTTouchBarAlwaysShowButton": false,
       "BTTTouchBarButtonWidth": 100,
-      "BTTTouchBarScriptUpdateInterval": 5,
+      "BTTTouchBarScriptUpdateInterval": 15,
       "BTTTouchBarItemIconHeight": 22,
       "BTTTouchBarBatteryHideOnCharging": false,
       "BTTTouchBarButtonTextAlignment": 1,
