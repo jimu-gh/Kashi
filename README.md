@@ -35,16 +35,16 @@ To learn how to install a file from PyPI, visit the [installation tutorial](http
 
 A. Open BetterTouchTool Configuration, accessible via the top menu bar.
 ![Open BTT Configuration](/screens/1.png)
-<img src="screens/1.png" alt="Open BTT Configuration" style="max-width:20%;">
+<img src="screens/1.png" alt="Open BTT Configuration" width="50%">
 B. Confirm that you are in the Touch Bar Settings.
 ![Touch Bar Settings](/screens/2.png)
-<img src="screens/2.png" alt="Touch Bar Settings" style="max-width:50%;">
+<img src="screens/2.png" alt="Touch Bar Settings" width="20%"">
 C. Open [`kashi.json`](/kashi.json) in a text editor. Select all (⌘A) and copy (⌘C).
 ![Select / Copy JSON](/screens/3.png)
-<img src="screens/3.png" alt="Select / Copy JSON" style="max-width:10%;">
+<img src="screens/3.png" alt="Select / Copy JSON" width="50">
 D. Return to the BetterTouchTool Configuration and paste (⌘V). You should see the new widget "Shell Script/Task: Kashi" in your list.
 ![Paste JSON Into BTT Configuration Window](/screens/4.png)
-<img src="screens/4.png" alt="Paste JSON Into BTT Configuration Window" style="max-width:10%;">
+<img src="screens/4.png" alt="Paste JSON Into BTT Configuration Window" width="50">
 That's it! If you followed all the steps above, lyrics for the currently playing song should now appear on the Touch Bar. Enjoy! 🎉
 
 For further Touch Bar customization, please visit the official [BetterTouchTool Documentation](https://docs.bettertouchtool.net/docs/402_touch_bar_basics.html)
