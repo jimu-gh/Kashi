@@ -11,8 +11,8 @@ Kashi is a custom [BetterTouchTool](https://folivora.ai/) widget that displays t
 Kashi currently works with [Spotify](https://www.spotify.com/us/download/other/) and [iTunes](https://www.apple.com/itunes/download/). Web-based player support is in the works.
 
 Kashi has three main functions:
-1. It gets the current song playing via AppleScript.
-2. It searches the [Genius API](https://docs.genius.com/) and looks for the best match within the hits.
+1. It retrieves data about the current song playing via AppleScript.
+2. It calls the [Genius API](https://docs.genius.com/) and finds the URL of the best match within the search hits.
 3. It scrapes lyrics from the raw HTML, prettifies the formatting, and outputs them onto the Touch Bar.
 
 ## Installation
