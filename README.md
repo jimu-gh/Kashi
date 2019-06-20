@@ -13,7 +13,7 @@ Kashi currently works with [Spotify](https://www.spotify.com/us/download/other/)
 Kashi has three main functions:
 1. It retrieves data about the current song playing via AppleScript.
 2. It calls the [Genius API](https://docs.genius.com/) and gets the URL of the best match in the search hits.
-3. It scrapes lyrics from said URL's raw HTML, prettifies the formatting, and outputs them onto the Touch Bar.
+3. It scrapes lyrics from that URL's raw HTML, prettifies the formatting, and outputs them onto the Touch Bar.
 
 ## Installation
 
