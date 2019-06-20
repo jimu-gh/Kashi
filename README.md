@@ -19,9 +19,9 @@ Kashi has three main functions:
 
 ### Step 1: Install BetterTouchTool
 
-BetterTouchTool can be downloaded [here](https://folivora.ai/downloads). To install, unzip the download and move the application file to your Applications folder.
+BetterTouchTool can be downloaded [here](https://folivora.ai/downloads). To install, unzip the download file and move the application file to your Applications folder.
 
-### Step 2: Install Python 3 & Necessary Packages
+### Step 2: Install Python 3 and Packages
 
 Install [Python 3](https://www.python.org/downloads/release/python-371/) and the Python packages below.<br>
 For help with package installation, please refer to the [Python Packaging User Guide](https://packaging.python.org/tutorials/installing-packages/).
