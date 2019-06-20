@@ -55,9 +55,9 @@ That's it! Lyrics for the currently playing song should now appear on the Touch 
 
 ## BetterTouchTool Resources
 
-For detailed information about Touch Bar customization, please refer to the official [Documentation](https://docs.bettertouchtool.net/docs/402_touch_bar_basics.html).
+For detailed information about Touch Bar customization, please refer to the official [BTT Documentation](https://docs.bettertouchtool.net/docs/402_touch_bar_basics.html).
 
-More awesome Touch Bar presets can be found on the [Community Platform](https://community.folivora.ai/).
+More awesome Touch Bar presets can be found on the [BTT Community Platform](https://community.folivora.ai/).
 
 ## Planned Features
   - Support for Web-Based Players: Google Play Music, Youtube Music, Amazon Prime Music
