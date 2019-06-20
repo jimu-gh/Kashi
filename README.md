@@ -17,7 +17,7 @@ Kashi has three main functions:
 
 ### Step 1: Install BetterTouchTool
 
-Kashi was made for BTT, so first you will need to download and install [BetterTouchTool](https://folivora.ai/). The software is free to use (to an extent).
+Kashi was made for BetterTouchTool, so first you will need to download and install [BetterTouchTool](https://folivora.ai/). The software is free to use (for 45 days).
 
 ### Step 2: Install Python & Necessary Modules
 
@@ -33,21 +33,21 @@ To learn how to install a file from PyPI, visit the [installation tutorial](http
   
 ### Step 3: Import Kashi Into BetterTouchTool
 
-Open BetterTouch Tool preferences. If the app is hidden in the dock, it may be visible in the top menu bar.
+A. Open BetterTouchTool Configuration, accessible via the top menu bar.
 ![pref](/screens/1.png)
-Click "Manage Presets", then "Import".
-
-![import](/screens/2.png)
-
-Open [`kashi.json`](/kashi.json) to import the preset.
+B. Confirm that you are in the Touch Bar Settings.
+![pref](/screens/2.png)
+C. Open [`kashi.json`](/kashi.json) in a text editor. Select all (⌘A) and copy (⌘C).
 ![json](/screens/3.png)
-That's it! You should see Kashi appear as a new widget.
+D. Return to the BetterTouchTool Configuration and paste (⌘V). You should see the new widget "Shell Script/Task: Kashi" in your list.
 ![kashi](/screens/4.png)
-Lyrics for the currently playing song should appear on the Touch Bar. Enjoy! 🎉
+That's it! If you followed all the steps above, lyrics for the currently playing song should now appear on the Touch Bar. Enjoy! 🎉
+
+For further Touch Bar customization, please visit the official [BetterTouchTool Documentation](https://docs.bettertouchtool.net/docs/402_touch_bar_basics.html)
 
 ## Planned Features
-  - Scrolling lyrics (in progress)
-  - Browser support: Youtube, Soundcloud, etc.
+  - Support for Youtube Music
+  - Scrolling lyrics
   - Support for non-English languages.
 
 ## Contact
