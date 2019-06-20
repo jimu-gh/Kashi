@@ -35,7 +35,7 @@ To learn how to install a file from PyPI, visit the [installation tutorial](http
 
 A. Open BetterTouchTool Configuration, accessible via the top menu bar.
 ![Open BTT Configuration](/screens/1.png)
-<img src="/screens/1.png" alt="Open BTT Configuration" style="max-width:100%;">
+<img src="screens/1.png" alt="Open BTT Configuration" style="max-width:100%;">
 B. Confirm that you are in the Touch Bar Settings.
 ![Touch Bar Settings](/screens/2.png)
 <img src="/master/screens/2.png" alt="Touch Bar Settings" style="max-width:100%;">
