@@ -8,7 +8,7 @@
 
 Kashi is a custom [BetterTouchTool](https://folivora.ai/) widget that displays the current song lyrics on the Macbook Pro's Touch Bar.
 
-Kashi currently works with [Spotify](https://www.spotify.com/us/download/other/) and [iTunes](https://www.apple.com/itunes/download/).
+Kashi currently works with [Spotify](https://www.spotify.com/us/download/other/) and [iTunes](https://www.apple.com/itunes/download/). Web-based player support is in the works.
 
 Kashi has three main functions:
 1. It gets the current song playing via AppleScript.
@@ -21,9 +21,9 @@ Kashi has three main functions:
 
 BetterTouchTool is free to use (for 45 days) and can be downloaded [here](https://folivora.ai/downloads). To install, unzip the download and move the application file to your Applications folder.
 
-### Step 2: Install Python 3 + Packages
+### Step 2: Install Python 3 & Necessary Packages
 
-Install [Python 3](https://www.python.org/downloads/release/python-371/) and the [PyPI](https://pypi.org/) packages below.<br>
+Install [Python 3](https://www.python.org/downloads/release/python-371/) and the Python packages below.<br>
 For help with package installation, please refer to the [Python Packaging User Guide](https://packaging.python.org/tutorials/installing-packages/).
 
   - [OSAscript](https://pypi.org/project/osascript/)<br>
@@ -33,7 +33,7 @@ For help with package installation, please refer to the [Python Packaging User G
   - [BeautifulSoup](https://pypi.org/project/beautifulsoup4/)<br>
   `pip install beautifulsoup4` or `pip3 install beautifulsoup4`
   
-### Step 3: Import Kashi.json Into BetterTouchTool
+### Step 3: Import Kashi.json into BetterTouchTool
 
 Open BetterTouchTool Configuration, accessible via the top menu bar.
 
@@ -55,7 +55,7 @@ That's it! Lyrics for the currently playing song should now appear on the Touch 
 
 ## BetterTouchTool Resources
 
-For help with Touch Bar customization, please refer to the official [Documentation](https://docs.bettertouchtool.net/docs/402_touch_bar_basics.html).
+For information about Touch Bar customization, please refer to the official [Documentation](https://docs.bettertouchtool.net/docs/402_touch_bar_basics.html).
 
 More awesome Touch Bar presets can be found on the [Community Platform](https://community.folivora.ai/).
 
