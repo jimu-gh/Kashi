@@ -35,13 +35,13 @@ To learn how to install a file from PyPI, visit the [installation tutorial](http
 
 A. Open BetterTouchTool Configuration, accessible via the top menu bar.
 ![Open BTT Configuration](/screens/1.png)
-<img src="/zer8ne/Kashi/raw/master/screens/1.png" alt="Open BTT Configuration" style="max-width:100%;">
+<img src="/screens/1.png" alt="Open BTT Configuration" style="max-width:100%;">
 B. Confirm that you are in the Touch Bar Settings.
 ![Touch Bar Settings](/screens/2.png)
-<img src="/zer8ne/Kashi/raw/master/screens/2.png" alt="Touch Bar Settings" style="max-width:100%;">
+<img src="/master/screens/2.png" alt="Touch Bar Settings" style="max-width:100%;">
 C. Open [`kashi.json`](/kashi.json) in a text editor. Select all (⌘A) and copy (⌘C).
 ![Select / Copy JSON](/screens/3.png)
-<img src="/zer8ne/Kashi/raw/master/screens/3.png" alt="Select / Copy JSON" style="max-width:100%;">
+<img src="/raw/master/screens/3.png" alt="Select / Copy JSON" style="max-width:100%;">
 D. Return to the BetterTouchTool Configuration and paste (⌘V). You should see the new widget "Shell Script/Task: Kashi" in your list.
 ![Paste JSON Into BTT Configuration Window](/screens/4.png)
 <img src="/zer8ne/Kashi/raw/master/screens/4.png" alt="Paste JSON Into BTT Configuration Window" style="max-width:100%;">
