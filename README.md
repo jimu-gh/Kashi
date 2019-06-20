@@ -11,7 +11,7 @@ Kashi is a custom widget for [BetterTouchTool](https://folivora.ai/) that displa
 Kashi has three main functions:
 1. It gets the current song playing via AppleScript.
 2. It searches the [Genius API](https://docs.genius.com/) and looks for the best match within the hits.
-3. It scrapes lyrics from the raw HTML, formats, and outputs them onto the Touch Bar.
+3. It scrapes lyrics from the raw HTML, prettifies the formatting, and outputs them onto the Touch Bar.
 
 ## Installation
 
@@ -51,16 +51,15 @@ Paste (⌘V) directly into the BetterTouchTool Configuration window. The new wid
 
 That's it! Lyrics for the currently playing song should now appear on the Touch Bar. Enjoy! 🎉
 
-## Resources
+## BetterTouchTool Resources
 
-For help with further customization, please refer to the official [BetterTouchTool Documentation](https://docs.bettertouchtool.net/docs/402_touch_bar_basics.html).
+For help with Touch Bar customization, please refer to the official [Documentation](https://docs.bettertouchtool.net/docs/402_touch_bar_basics.html).
 
-Many more amazing Touch Bar presets can be found on the [BetterTouchTool Community platform](https://community.folivora.ai/).
+More awesome Touch Bar presets can be found on the [Community Platform](https://community.folivora.ai/).
 
 ## Planned Features
-  - Support for Youtube Music
+  - Support for Web-Based Players: Google Play Music, Youtube Music, Amazon Prime Music
   - Scrolling lyrics
-  - Support for non-English languages.
 
 ## Contact
 
