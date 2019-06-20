@@ -37,6 +37,7 @@ Open BetterTouchTool Configuration, accessible via the top menu bar.
 <img src="screens/1.png" alt="Open BTT Configuration" width="425">
 
 Confirm that you are in the Touch Bar Settings.
+
 <img src="screens/2.png" alt="Touch Bar Settings" width="400">
 
 Open [`kashi.json`](/kashi.json) in a text editor. Select all (⌘A) and copy (⌘C).
