@@ -39,15 +39,15 @@ A. Open BetterTouchTool Configuration, accessible via the top menu bar.
 
 B. Confirm that you are in the Touch Bar Settings.
 
-<img src="screens/2.png" alt="Touch Bar Settings" width="750">
+<img src="screens/2.png" alt="Touch Bar Settings" width="400">
 
 C. Open [`kashi.json`](/kashi.json) in a text editor. Select all (⌘A) and copy (⌘C).
 
-<img src="screens/3.png" alt="Select / Copy JSON" width="600">
+<img src="screens/3.png" alt="Select / Copy JSON" width="650">
 
 D. Return to the BetterTouchTool Configuration and paste (⌘V). You should see the new widget "Shell Script/Task: Kashi" in your list.
 
-<img src="screens/4.png" alt="Paste JSON Into BTT Configuration Window" width="50">
+<img src="screens/4.png" alt="Paste JSON Into BTT Configuration Window" width="650">
 
 That's it! If you followed all the steps above, lyrics for the currently playing song should now appear on the Touch Bar. Enjoy! 🎉
 
