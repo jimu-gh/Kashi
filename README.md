@@ -60,7 +60,7 @@ For detailed information about Touch Bar customization, please refer to the offi
 More awesome Touch Bar presets can be found on the [BTT Community Platform](https://community.folivora.ai/).
 
 ## Planned Features
-  - Support for Web-Based Players: Google Play Music, Youtube Music, Amazon Prime Music
+  - Support for Web-Based Players: Youtube, Youtube Music, Amazon Prime Music, Pandora
   - Scrolling lyrics
 
 ## Contact
