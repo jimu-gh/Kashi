@@ -18,8 +18,8 @@ Kashi will also work when watching a YouTube music video on Chrome or Safari. In
 
 Kashi has three main functions:
 1. It retrieves data about the current song playing in Spotify, iTunes, or Youtube via AppleScript.
-2. It calls the [Genius API](https://docs.genius.com/) and gets the URL of the best match in the search hits.
-3. It scrapes lyrics from that URL's raw HTML, prettifies the formatting, and outputs them onto the Touch Bar.
+2. It calls [Genius](https://docs.genius.com/) and checks for a good match in the search hits, accounting for variations such as remixes.
+3. It scrapes the lyrics from the raw HTML of the Genius URL, prettifies, and outputs them onto the Touch Bar.
 
 ## Installation
 
