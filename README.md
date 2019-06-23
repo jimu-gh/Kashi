@@ -8,7 +8,7 @@
 
 Kashi is a custom [BetterTouchTool](https://folivora.ai/) widget that displays the current song lyrics on the Macbook Pro's Touch Bar.
 
-Kashi currently works with [Spotify](https://www.spotify.com/us/download/other/), [iTunes](https://www.apple.com/itunes/download/).
+Kashi currently works with [Spotify](https://www.spotify.com/us/download/other/), [iTunes](https://www.apple.com/itunes/download/), and [Youtube](https://www.youtube.com).
 
 **UPDATE (6/23/19): YouTube support added.**
 
