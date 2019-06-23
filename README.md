@@ -10,7 +10,11 @@ Kashi is a custom [BetterTouchTool](https://folivora.ai/) widget that displays t
 
 Kashi currently works with [Spotify](https://www.spotify.com/us/download/other/), [iTunes](https://www.apple.com/itunes/download/).
 
-**UPDATE (6/23/19):** YouTube support added. Kashi will also work when watching a YouTube music video on Chrome or Safari. In order to do this, Youtube must be on the active tab. If a browser and a player are open at the same time, Kashi will prioritize the player if it is playing music.
+**UPDATE (6/23/19): YouTube support added.**
+
+Kashi will also work when watching a YouTube music video on Chrome or Safari. In order to do this, Youtube must be on the active tab. If a browser and a player are open at the same time, Kashi will prioritize the player if it is playing music.
+
+## How It Works
 
 Kashi has three main functions:
 1. It retrieves data about the current song playing via AppleScript.
