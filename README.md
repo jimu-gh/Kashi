@@ -90,4 +90,5 @@ ChengHaoMou's [Touchbar-Lyric](https://github.com/ChenghaoMou/touchbar-lyric) is
 ## Contact
 
 [LinkedIn](https://www.linkedin.com/in/hojim)
+
 [Homepage](https://www.jimho.us)
