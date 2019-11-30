@@ -6,20 +6,20 @@
 
 ![build](https://img.shields.io/badge/build-passing-brightgreen.svg?style=for-the-badge)  ![license](https://img.shields.io/badge/license-GPLv3-blue.svg?style=for-the-badge) ![license](https://img.shields.io/badge/PRs-welcome-yellow.svg?style=for-the-badge)
 
+## About Kashi
+
 Kashi is a custom [BetterTouchTool](https://folivora.ai/) widget that displays the current song lyrics on the Macbook Pro's Touch Bar.
 
-Kashi currently works with [Spotify](https://www.spotify.com/us/download/other/), [iTunes](https://www.apple.com/itunes/download/), and [Youtube](https://www.youtube.com).
-
-**UPDATE (6/23/19): YouTube support added.**
-
-Kashi will also work when watching a YouTube music video on Chrome or Safari. In order to do this, Youtube must be on the active tab. If a browser and a player are open at the same time, Kashi will prioritize the player if it is playing music.
-
-## How It Works
+Kashi works with [Spotify](https://www.spotify.com/us/download/other/), [Music](https://www.apple.com/music/), and [Youtube](https://www.youtube.com) (Chrome or Safari).
 
 Kashi has three main functions:
-1. It retrieves data about the current song playing in Spotify, iTunes, or Youtube via AppleScript.
+1. It retrieves data about the current song playing in Spotify, Music, or YouTube via AppleScript.
 2. It calls [Genius](https://docs.genius.com/) and checks for a good match in the search hits, accounting for variations such as remixes.
 3. It scrapes the lyrics from the raw HTML of the Genius URL, prettifies, and outputs them onto the Touch Bar.
+
+Regarding YouTube:
+1. YouTube must be playing on the active tab on Chrome or Safari, with window focus.
+2. If both browser and player are open, Kashi will prioritize the player if it is playing.
 
 ## Installation
 
@@ -53,21 +53,41 @@ Open [`kashi.json`](/kashi.json) in a text editor. Select all (⌘A) and copy (�
 
 <img src="screens/3.png" alt="Select / Copy JSON" width="650">
 
-Paste (⌘V) directly into the BetterTouchTool Configuration window. The new widget will appear in your list.
+Click somewhere on the trigger list (left column, striped), and Paste (⌘V) directly into the BetterTouchTool Configuration window. The new widget will appear in your list.
 
 <img src="screens/4.png" alt="Paste JSON Into BTT Configuration Window" width="650">
 
-That's it! Lyrics for the currently playing song should now appear on the Touch Bar. Enjoy! 🎉
+Depending on how your Python is installed, the widget may already be working. If not, do Step 4 below to configure the widget's parameters.
 
-## BetterTouchTool Resources
+### Step 4: Set Widget Parameters
+
+The Launch Path parameter must direct to your Python 3 install. [PATH](https://bic-berkeley.github.io/psych-214-fall-2016/using_pythonpath.html) will also work.
+
+&nbsp;&nbsp;&nbsp;Default - "/Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7"
+
+The second parameter must refer to Python's "site-packages" folder containing Python modules.
+
+&nbsp;&nbsp;&nbsp;Default - "/Library/Frameworks/Python.Framework/Versions/3.7/lib/Python3.7/site-packages"
+
+Lyrics for the currently playing song should now appear on the Touch Bar. Enjoy! 🎉
+
+## History
+
+&nbsp;&nbsp;&nbsp;11.30.19 Updated for macOS Catalina
+
+&nbsp;&nbsp;&nbsp;6.23.19 YouTube and browser support added
+
+&nbsp;&nbsp;&nbsp;12.03.18 Initial release
+
+## Resources
 
 For detailed information about Touch Bar customization, please refer to the official [BTT Documentation](https://docs.bettertouchtool.net/docs/402_touch_bar_basics.html).
 
-More awesome Touch Bar presets can be found on the [BTT Community Platform](https://community.folivora.ai/).
+More awesome Touch Bar presets can be found on the [BTT Community](https://community.folivora.ai/).
 
-## Planned Features
-  - Scrolling lyrics
+ChengHaoMou's [Touchbar-Lyric](https://github.com/ChenghaoMou/touchbar-lyric) is a similarly inspired widget accessing NetEase's API for real-time lyrics display.
 
 ## Contact
 
 [LinkedIn](https://www.linkedin.com/in/hojim)
+[Homepage](https://www.jimho.us)
