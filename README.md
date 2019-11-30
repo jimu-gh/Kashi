@@ -63,7 +63,7 @@ That's it! Lyrics for the currently playing song should now appear on the Touch 
 
 &nbsp;&nbsp;11.30.19 Updated for macOS Catalina
 
-&nbsp;&nbsp;06.23.19 YouTube and browser support added
+&nbsp;&nbsp;6.23.19 YouTube and browser support added
 
 &nbsp;&nbsp;12.03.18 Initial release
 
