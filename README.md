@@ -69,12 +69,13 @@ That's it! Lyrics for the currently playing song should now appear on the Touch 
 
 ## Resources
 
-ChengHaoMou's [Touchbar-Lyric](https://github.com/ChenghaoMou/touchbar-lyric) is a similarly inspired widget with real-time lyrics display.
-
 For detailed information about Touch Bar customization, please refer to the official [BTT Documentation](https://docs.bettertouchtool.net/docs/402_touch_bar_basics.html).
 
 More awesome Touch Bar presets can be found on the [BTT Community](https://community.folivora.ai/).
 
+ChengHaoMou's [Touchbar-Lyric](https://github.com/ChenghaoMou/touchbar-lyric) is a similarly inspired widget with real-time lyrics display.
+
 ## Contact
 
 [LinkedIn](https://www.linkedin.com/in/hojim)
+[Homepage](https://www.jimho.us)
