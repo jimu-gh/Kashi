@@ -6,6 +6,7 @@ import hashlib
 from bs4 import BeautifulSoup
 from io import open
 
+
 def main():
     # Get browser and player data via AppleScript
     code, output, err = getBrowserAndPlayerData()
@@ -68,6 +69,7 @@ def main():
         printWisdom(song)
     return
 
+
 def getBrowserAndPlayerData():
     applescript = '''
     on run
@@ -101,6 +103,7 @@ def getBrowserAndPlayerData():
     '''
     return osascript.run(applescript, background=False)
 
+
 def processBrowserData(browser_data):
     browser_artist = browser_song = ""
     # Check that tab is a Youtube video
@@ -123,6 +126,7 @@ def processBrowserData(browser_data):
         browser_state = 'paused'
     return browser_data[0], browser_artist, browser_song, browser_state
 
+
 def processPlayerData(player_data):
     player_type = player_data[0]
     # Recombine artist or title that may have been split up if commas in title
@@ -132,6 +136,7 @@ def processPlayerData(player_data):
     player_state = player_data[3].lower()
     return player_type, player_artist, player_song, player_state
 
+
 def playerOrBrowser(player_type, player_state, browser_type, browser_state):
     if player_state == "playing":
         return "player"
@@ -139,6 +144,7 @@ def playerOrBrowser(player_type, player_state, browser_type, browser_state):
         return "browser"
     else:
         return
+
 
 def normalizeCommas(engine, player_data):
     while len(player_data) > 5:
@@ -150,12 +156,14 @@ def normalizeCommas(engine, player_data):
             player_data.pop(3)
     return player_data
 
+
 def cleanSong(songtitle):
     # Remove everything after dash
     songtitle = re.sub(r' -.*$', '', songtitle)
     songtitle = re.sub(r' \(.*\)', '', songtitle)   # Remove parentheses
     songtitle = re.sub(r' \[.*\]', '', songtitle)   # Remove brackets
     return songtitle
+
 
 def multipleArtistCheck(artist):
     if '&' in artist:
@@ -165,6 +173,7 @@ def multipleArtistCheck(artist):
         artist_1 = 'n/a'
         artist_2 = 'n/a'
     return artist_1, artist_2
+
 
 def parseAndFormat(url):
     source_soup = BeautifulSoup(requests.get(
@@ -180,6 +189,7 @@ def parseAndFormat(url):
     lyricstext = lyricstext.replace('\n', ', ').replace('?,', '?').replace('!,', '!').replace(' ,', ',').replace(
         ' .', '.').replace('.,', '.').replace(',.', '.').replace('...', '..').replace('...', '..').replace('  ', ' ')
     return lyricstext
+
 
 def printWisdom(player_song):
     wisdom = [
@@ -197,6 +207,7 @@ def printWisdom(player_song):
     songhash_int = int(songhash, base=16)
     # Reduce hash to within array length
     print(wisdom[(songhash_int % (len(wisdom) + 1)) - 1])
+
 
 if __name__ == '__main__':
     main()
