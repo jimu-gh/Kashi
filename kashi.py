@@ -4,8 +4,6 @@ import json
 import osascript
 import hashlib
 from bs4 import BeautifulSoup
-from io import open
-
 
 def main():
     # Get browser and player data via AppleScript
