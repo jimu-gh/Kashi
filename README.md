@@ -53,19 +53,31 @@ Open [`kashi.json`](/kashi.json) in a text editor. Select all (⌘A) and copy (�
 
 <img src="screens/3.png" alt="Select / Copy JSON" width="650">
 
-Paste (⌘V) directly into the BetterTouchTool Configuration window. The new widget will appear in your list.
+Click somewhere on the trigger list (left column, striped), and Paste (⌘V) directly into the BetterTouchTool Configuration window. The new widget will appear in your list.
 
 <img src="screens/4.png" alt="Paste JSON Into BTT Configuration Window" width="650">
 
-That's it! Lyrics for the currently playing song should now appear on the Touch Bar. Enjoy! 🎉
+Depending on how your Python is installed, the widget may already be working. If not, do Step 4 below to configure the widget's parameters.
+
+### Step 4: Set Widget Parameters
+
+The Launch Path parameter must direct to your Python 3 install. [PATH](https://bic-berkeley.github.io/psych-214-fall-2016/using_pythonpath.html) will also work.
+
+&nbsp;&nbsp;&nbsp;Default - "/Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7"
+
+The second parameter must refer to Python's "site-packages" folder containing Python modules.
+
+&nbsp;&nbsp;&nbsp;Default - "/Library/Frameworks/Python.Framework/Versions/3.7/lib/Python3.7/site-packages"
+
+Lyrics for the currently playing song should now appear on the Touch Bar. Enjoy! 🎉
 
 ## History
 
-&nbsp;&nbsp;11.30.19 Updated for macOS Catalina
+&nbsp;&nbsp;&nbsp;11.30.19 Updated for macOS Catalina
 
-&nbsp;&nbsp;6.23.19 YouTube and browser support added
+&nbsp;&nbsp;&nbsp;6.23.19 YouTube and browser support added
 
-&nbsp;&nbsp;12.03.18 Initial release
+&nbsp;&nbsp;&nbsp;12.03.18 Initial release
 
 ## Resources
 
@@ -73,7 +85,7 @@ For detailed information about Touch Bar customization, please refer to the offi
 
 More awesome Touch Bar presets can be found on the [BTT Community](https://community.folivora.ai/).
 
-ChengHaoMou's [Touchbar-Lyric](https://github.com/ChenghaoMou/touchbar-lyric) is a similarly inspired widget with real-time lyrics display.
+ChengHaoMou's [Touchbar-Lyric](https://github.com/ChenghaoMou/touchbar-lyric) is a similarly inspired widget accessing NetEase's API for real-time lyrics display.
 
 ## Contact
 
